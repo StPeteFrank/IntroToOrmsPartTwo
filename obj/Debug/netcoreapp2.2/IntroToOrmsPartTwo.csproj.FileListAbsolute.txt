@@ -1,0 +1,11 @@
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/bin/Debug/netcoreapp2.2/IntroToOrmsPartTwo.deps.json
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/bin/Debug/netcoreapp2.2/IntroToOrmsPartTwo.runtimeconfig.json
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/bin/Debug/netcoreapp2.2/IntroToOrmsPartTwo.runtimeconfig.dev.json
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/bin/Debug/netcoreapp2.2/IntroToOrmsPartTwo.dll
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/bin/Debug/netcoreapp2.2/IntroToOrmsPartTwo.pdb
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/obj/Debug/netcoreapp2.2/IntroToOrmsPartTwo.csprojAssemblyReference.cache
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/obj/Debug/netcoreapp2.2/IntroToOrmsPartTwo.csproj.CoreCompileInputs.cache
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/obj/Debug/netcoreapp2.2/IntroToOrmsPartTwo.AssemblyInfoInputs.cache
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/obj/Debug/netcoreapp2.2/IntroToOrmsPartTwo.AssemblyInfo.cs
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/obj/Debug/netcoreapp2.2/IntroToOrmsPartTwo.dll
+/Users/frankdiaz/sdg/unit-iii/IntroToOrmsPartTwo/obj/Debug/netcoreapp2.2/IntroToOrmsPartTwo.pdb
