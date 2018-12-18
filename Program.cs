@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace IntroToOrmsPartTwo
 {
@@ -34,22 +35,38 @@ namespace IntroToOrmsPartTwo
 
       //   db.SaveChanges();
 
-      System.Console.WriteLine("Enter the SeenAnimals details");
-      var Species = Console.ReadLine();
-      var CountOfTimesSeen = int.Parse(Console.ReadLine());
-      var LocationOfLastSeen = Console.ReadLine();
+      //   System.Console.WriteLine("Enter the SeenAnimals details");
+      //   var Species = Console.ReadLine();
+      //   var CountOfTimesSeen = int.Parse(Console.ReadLine());
+      //   var LocationOfLastSeen = Console.ReadLine();
 
-      db.SeenAnimals.Add(new SeenAnimals
-      {
-        Species = Species,
-        CountOfTimesSeen = CountOfTimesSeen,
-        LocationOfLastSeen = LocationOfLastSeen
-      });
+      //   db.SeenAnimals.Add(new SeenAnimals
+      //   {
+      //     Species = Species,
+      //     CountOfTimesSeen = CountOfTimesSeen,
+      //     LocationOfLastSeen = LocationOfLastSeen
+      //   });
 
-      db.SaveChanges();
+      //   db.SaveChanges();
 
 
       //READ data
+      //Display all animals the user has seen
+
+      var allSeenAnimals = db.SeenAnimals;
+
+      foreach (var seenanimal in allSeenAnimals)
+      {
+        System.Console.WriteLine(seenanimal.Species);
+      }
+      // Display all animals seen in the Jungle
+      var onlySeenInTheJungle = db.SeenAnimals.Where(seenanimal => seenanimal.LocationOfLastSeen == "Jungle");
+      System.Console.WriteLine("Animals seen only in the Jungle");
+      foreach (var seenanimal in onlySeenInTheJungle)
+      {
+        System.Console.WriteLine(seenanimal.Species);
+      }
+
       //UPDATE data
       //DELETE data
     }
