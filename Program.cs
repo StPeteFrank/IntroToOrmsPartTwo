@@ -68,7 +68,39 @@ namespace IntroToOrmsPartTwo
       }
 
       //UPDATE data
+      //Update the CountOfTimesSeen and LocationOfLastSeen for an animal
+      //Part 1 Find the object(species)
+      var Gorilla = db.SeenAnimals.FirstOrDefault(seenanimal => seenanimal.Species == "Gorilla");
+      if (Gorilla != null)
+      {
+        //Part 2 Update the data
+        Gorilla.CountOfTimesSeen = 50;
+        Gorilla.LocationOfLastSeen = "Desert";
+        //Part 3 Save the changes
+        db.SaveChanges();
+      }
+
       //DELETE data
+      //Remove all animals that I have seen in the Desert
+      //Find the object(desertAnimals)
+      var desertAnimals = db.SeenAnimals.FirstOrDefault(seenanimal => seenanimal.LocationOfLastSeen == "Desert");
+      if (desertAnimals != null)
+      {
+        //Delete the object
+        db.SeenAnimals.Remove(desertAnimals);
+        //Save the changes
+        db.SaveChanges();
+      }
+      //Add all the CountOfTimesSeen and get a total number of animals seen
+      var totalanimalsseen = db.SeenAnimals.Sum(seenanimal => seenanimal.CountOfTimesSeen);
+      Console.WriteLine(totalanimalsseen);
+
+      db.SaveChanges();
+
+      //Get the CountOfTimesSeen of lions, tigers and bears
+      var totalofeachanimalseen = db.SeenAnimals.Where(seenanimal => seenanimal.Species == "Lions" || seenanimal.Species == "Tigers" || seenanimal.Species == "Bears" || seenanimal.Species == "Gorilla").Sum(seenanimal => seenanimal.CountOfTimesSeen);
+      Console.WriteLine(totalofeachanimalseen);
+
     }
   }
 }
